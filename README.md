@@ -1,2 +1,2 @@
 # web_5sem 
-lab_1
+https://posteronee.github.io/web_5sem/

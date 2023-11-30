@@ -1,51 +1,89 @@
-body {
-    background-image: url('IMG_2741.jpg');
+main {
+    background-image: url('Screenshot 2023-11-17 at 03.31.58.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    height: 100vh;
 }
 
-header h1 {
-    color: #330;
-    font-size: 100px;
-    font-family: 'Georgia, serif', sans-serif;
-    margin-top: -10px;
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+    font-size: 50px;
+    font-family: 'Georgia, serif', sans-serif;
+    text-align: center;
+    background-color: #ccc;
+    color: #484946;
+    margin: 0;
+    padding: 10px;
+}
+
 
 footer {
-    color: #fff;
+    background-image: url('listia_palma_rastenie_197018_3840x2160.jpg');
+    background-position: center;
+    color: #eae4e4;
     font-size: 30px;
     text-align: center;
     font-family: 'Georgia, serif', sans-serif;
-    margin-top: 700px;
+    margin-top: 300px;
+
 }
 
 
-nav{
+.accordion {
+    font-family: 'Georgia, serif', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
-.menu {
+
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    font-family: 'Georgia, serif', sans-serif;
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 15%;
+
+}
+
+.socials{
+    width: 20%;
+    margin-right: 1vw;
+}
+
+.flex{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    padding-top: 40px;
 }
 
-.menu .button {
-    font-weight: bold;
-    list-style: none;
-    font-size: 20px;
-    line-height: 1.8;
-    font-family: 'Georgia, serif', sans-serif;
-    text-align: left;
-    color: #330;
-    padding: 5px;
-    margin: 5px;
+
+.panel .phoneNumber {
+    color: black;
     text-decoration: none;
-    letter-spacing: 1px;
 }
 
-.menu .button:active {
-    color: #c5c5c5;
+.panel .phoneNumber:active {
+    color: #a81f1f;
 }
 
+.panel .phoneNumber:hover {
+    color: #a81f1f;
+}

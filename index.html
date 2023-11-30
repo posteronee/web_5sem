@@ -4,67 +4,49 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="черешня, вишня, слива, груша, купить, калининград">
     <meta name="description" content="какое то описание">
+    <link rel="stylesheet" href="styles.css">
     <title>lab1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<header style="text-align: center;">
-    <h1 style="text-align: center;">Kenigcherry</h1>
+<header class="title">
+    <h1>Kenigcherry</h1>
 </header>
 
 <main>
-    <h2>Основное содержимое страницы</h2>
-    <nav>
-        <ul>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Сделать бронь</a></li>
-        </ul>
-    </nav>
-    <p>Сайт будет содержать фото товаров, информацию о бизнесе и т.д...</p>
-    <section>
-        Контакты:
-        <ul>
-            <li> +752525252 </li>
-            <li> +766666666 </li>
-        </ul>
-    </section>
-    <section>
-        <strong> Сделать бронь </strong>
-        <pre>
+    <button class="accordion">Как нас найти?</button>
+    <div class="panel">
+        <p>Коммент</p> <!-- буду перебрасывать на другую страницу с яндекс картой и локацией -->
+    </div>
 
+    <button class="accordion">Наши контакты</button>
+    <div class="panel flex">
+        <a class="phoneNumber" href="tel:+1234567890">+1 (234) 567-890</a>
+        <a class="phoneNumber" href="tel:+9876543210">+9 (876) 543-210</a>
+    </div>
 
-   __.--~~.,-.__
-   `~-._.-(`-.__`-.
-           \    `~~`
-      .--./ \
-     /#   \  \.--.
-     \    /  /#   \
-      '--'   \    /
-              '--'
-        </pre>
+    <button class="accordion">Наши социальные сети</button>
+    <div class="panel">
+        <a href="https://instagram.com/kenigcherry?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><img class="socials" src="2959748_instagram_photo_share_icon.svg" alt="Instagram"></a>
+        <a href="https://t.me/kenigcherry" target="_blank"><img class="socials" src="5340247_chat_media_network_social_telegram_icon.svg" alt="Telegram"></a>
+        <a href="https://vk.com/kenigcherry" target="_blank"><img class="socials" src="5340285_media_social_vk_vkontakte_icon.svg" alt="VK"></a>
+    </div>
 
-        <ol start="1" type="A">
-            <li> бронь вишни </li>
-            <li> бронь черешни </li>
-            <li> бронь сливы </li>
-            <li> бронь грущи </li>
-        </ol>
-    </section>
-    <article>
-        Информация о том как создавался сад
-    </article>
-    <p> инфа о вишне </p>
-    <p> инфа о черешне </p>
-    <p> инфа о груше </p>
-    <p> инфа о сливе </p>
-    <aside>
-        Сам фан фектс: БЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛАБЛА
-    </aside>
-    <code>&lt;Программист не стал креативить и назвал детей Новый сын (1) и Новый сын (2). &gt;</code>
+    <button class="accordion">Сделать заказ</button>
+    <div class="panel">
+        <p>Коммент</p>  <!-- буду перебрасывать на другую страницу где будет полностью интерфейс с учетными записями и бронями/заказами-->
+    </div>
 </main>
 
-<footer style="text-align: center;">
-    <p style="text-align: center;">&copy; 2023 Название вашего сайта. Все права защищены.
-        бимбим бамбам a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+<footer>
+    <article>
+        Мы рады приветствовать Вас на нашей странице!
+        Свежие фрукты и ягоды на любой вкус из нашего сада уже ждут вас, необходимо лишь сделать заказ!
+        Основной вид деятельности нашего хозяйства - выращивание черешни, вишни, сливы и груши. Сбор ягоды проводим вручную, самосбора нет. Свежая сочная черешня реализуется сразу после сбора.
+        Нашему саду уже 12 лет, и мы стараемся каждый год радовать наших клиентов отборным и свежим продуктом.
+    </article>
+    <p>&copy; 2023. Kenigcherry. Все права защищены.</p>
 </footer>
 </body>
 </html>
