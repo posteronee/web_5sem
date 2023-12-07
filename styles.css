@@ -1,3 +1,4 @@
+
 main {
     background-image: url('Screenshot 2023-11-17 at 03.31.58.jpg');
     background-repeat: no-repeat;
@@ -13,10 +14,16 @@ body {
 
 h1 {
     font-size: 50px;
-    font-family: 'Georgia, serif', sans-serif;
+    line-height: normal;
+    font-family: 'Lora', serif;
+    font-weight: bold;
     text-align: center;
     background-color: #ccc;
     color: #484946;
+    word-spacing: normal;
+    letter-spacing: .1rem;
+    font-style: normal;
+    text-decoration: none;
     margin: 0;
     padding: 10px;
 }
@@ -25,21 +32,33 @@ h1 {
 footer {
     background-image: url('listia_palma_rastenie_197018_3840x2160.jpg');
     background-position: center;
-    color: #eae4e4;
     font-size: 30px;
+    line-height: 120%;
+    font-family: 'Lora', serif;
+    font-weight: normal;
     text-align: center;
-    font-family: 'Georgia, serif', sans-serif;
+    color: #eae4e4;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-style: italic;
+    text-decoration: none;
     margin-top: 300px;
-
+    padding: 10px 10px 10px 10px;
 }
 
 
 .accordion {
-    font-family: 'Georgia, serif', sans-serif;
     font-size: 20px;
+    line-height: normal;
+    font-family: 'Lora', serif;
+    font-weight: 900;
     background-color: #ffffff;
     color: #444;
     cursor: pointer;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-style: normal;
+    text-decoration: none;
     padding: 18px;
     width: 20%;
     text-align: left;
@@ -54,20 +73,20 @@ footer {
 }
 
 .panel {
-    font-family: 'Georgia, serif', sans-serif;
+    font-family: 'Lora', serif;
     padding: 0 18px;
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     width: 15%;
-
 }
 
 .socials{
     width: 20%;
     margin-right: 1vw;
 }
+
 
 .flex{
     display: flex;
@@ -76,8 +95,9 @@ footer {
 
 
 .panel .phoneNumber {
-    color: black;
+    color: #444;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .panel .phoneNumber:active {
