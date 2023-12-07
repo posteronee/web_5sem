@@ -39,7 +39,7 @@ footer {
 
 
 @media screen and (max-width: 380px) {
-    table.work-schedule {
+    .work-schedule {
         display: none;
     }
 }
