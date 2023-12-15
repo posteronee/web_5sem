@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="черешня, вишня, слива, груша, купить, калининград">
     <meta name="description" content="какое то описание">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>lab1</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -15,25 +19,25 @@
 </header>
 
 <main>
-    <button class="accordion">Как нас найти?</button>
+    <button  class="buttons-style"><a href="location.html">Как нас найти?</a></button>
     <div class="panel">
         <p>Коммент</p> <!-- буду перебрасывать на другую страницу с яндекс картой и локацией -->
     </div>
 
-    <button class="accordion">Наши контакты</button>
+    <button class="accordion buttons-style">Наши контакты</button>
     <div class="panel flex">
         <a class="phoneNumber" href="tel:+1234567890">+1 (234) 567-890</a>
         <a class="phoneNumber" href="tel:+9876543210">+9 (876) 543-210</a>
     </div>
 
-    <button class="accordion">Наши социальные сети</button>
+    <button class="accordion buttons-style">Наши социальные сети</button>
     <div class="panel">
         <a href="https://instagram.com/kenigcherry?igshid=NGVhN2U2NjQ0Yg==" target="_blank"><img class="socials" src="2959748_instagram_photo_share_icon.svg" alt="Instagram"></a>
         <a href="https://t.me/kenigcherry" target="_blank"><img class="socials" src="5340247_chat_media_network_social_telegram_icon.svg" alt="Telegram"></a>
         <a href="https://vk.com/kenigcherry" target="_blank"><img class="socials" src="5340285_media_social_vk_vkontakte_icon.svg" alt="VK"></a>
     </div>
 
-    <button class="accordion">Сделать заказ</button>
+    <button class="buttons-style"><a href="order.html">Сделать заказ</a></button>
     <div class="panel">
         <p>Коммент</p>  <!-- буду перебрасывать на другую страницу где будет полностью интерфейс с учетными записями и бронями/заказами-->
     </div>
@@ -47,49 +51,50 @@
         Нашему саду уже 12 лет, и мы стараемся каждый год радовать наших клиентов отборным и свежим продуктом.
     </article>
 
-
-    <table class="work-schedule">
-        <caption>Режим работы магазина</caption>
-        <thead>
-        <tr>
-            <th class="table" style="padding: 10px;">День недели</th>
-            <th class="table" style="padding: 10px;">Время работы</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="day">
-            <td style="padding: 10px;">Понедельник</td>
-            <td style="padding: 10px;">9:00 - 18:00</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px;">Вторник</td>
-            <td style="padding: 10px;">9:00 - 18:00</td>
-        </tr>
-        <tr class="day">
-            <td style="padding: 10px;">Среда</td>
-            <td style="padding: 10px;">9:00 - 18:00</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px;">Четверг</td>
-            <td style="padding: 10px;">9:00 - 18:00</td>
-        </tr>
-        <tr class="day">
-            <td style="padding: 10px;">Пятница</td>
-            <td style="padding: 10px;">9:00 - 18:00</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px;">Суббота</td>
-            <td style="padding: 10px;">10:00 - 19:00</td>
-        </tr>
-        <tr class="day">
-            <td style="padding: 10px;">Воскресенье</td>
-            <td style="padding: 10px;">Выходной</td>
-        </tr>
-        </tbody>
-    </table>
-
-    <p style="margin: 0; padding: 10px;">&copy; 2023. Kenigcherry. Все права защищены.</p>
+    <div class="table-container">
+        <table class="work-schedule">
+            <caption>Режим работы магазина</caption>
+            <thead>
+            <tr class="top">
+                <th class="table">День недели</th>
+                <th class="table">Время работы</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="day">
+                <td>Понедельник</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr class="day">
+                <td>Вторник</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr class="day">
+                <td>Среда</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr class="day">
+                <td>Четверг</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr class="day">
+                <td>Пятница</td>
+                <td>9:00 - 18:00</td>
+            </tr>
+            <tr class="day">
+                <td>Суббота</td>
+                <td>10:00 - 19:00</td>
+            </tr>
+            <tr class="day">
+                <td>Воскресенье</td>
+                <td>Выходной</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="footer">
+        <p class="last">&copy; 2023. Kenigcherry. Все права защищены.</p>
+    </div>
 </footer>
-
 </body>
 </html>

@@ -15,39 +15,60 @@ body {
 
 h1 {
     font-size: 50px;
-    font-family: 'Georgia, serif', sans-serif;
+    line-height: normal;
+    font-family: 'Lora', serif;
+    font-weight: bold;
     text-align: center;
     background-color: #ccc;
     color: #484946;
+    word-spacing: normal;
+    letter-spacing: .1rem;
+    font-style: normal;
+    text-decoration: none;
     margin: 0;
     padding: 10px;
 }
 
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
     background-image: url('listia_palma_rastenie_197018_3840x2160.jpg');
     background-position: center;
-    color: #eae4e4;
     font-size: 30px;
+    line-height: 120%;
+    font-family: 'Lora', serif;
+    font-weight: normal;
     text-align: center;
-    font-family: 'Georgia, serif', sans-serif;
+    color: #eae4e4;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-style: italic;
+    text-decoration: none;
     margin-top: 300px;
+    padding: 10px 10px 10px 10px;
 }
 
 
 @media screen and (max-width: 380px) {
-    .work-schedule {
+    table.work-schedule {
         display: none;
     }
 }
 
+
+.table-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+
 .work-schedule {
     width: 100%;
     border-collapse: collapse;
+    display: grid;
+    grid-auto-rows: auto;
 }
+
 
 .work-schedule caption {
     font-size: 24px;
@@ -55,28 +76,47 @@ footer {
     padding-bottom: 10px;
 }
 
+
 .work-schedule th, .work-schedule td {
     border: 1px solid #eae4e4;
     padding: 10px;
     text-align: center;
+    height: 50px;
+    width: 900px;
 }
 
 
-
-.accordion {
-    font-family: 'Georgia, serif', sans-serif;
+.buttons-style {
     font-size: 20px;
+    line-height: normal;
+    font-family: 'Lora', serif;
+    font-weight: 900;
     background-color: transparent;
     color: #444;
     cursor: pointer;
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-style: normal;
+    text-decoration: none;
     padding: 18px;
     width: 20%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-    box-sizing: border-box;
 }
+
+
+.buttons-style a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.buttons-style a:hover {
+    color: inherit;
+}
+
 
 
 @media (max-width: 1040px) {
@@ -96,20 +136,19 @@ footer {
 }
 
 
-.active, .accordion:hover {
+.active, .buttons-style:hover {
     background-color: #ccc;
 }
 
 
 .panel {
-    font-family: 'Georgia, serif', sans-serif;
+    font-family: 'Lora', serif;
     padding: 0 18px;
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    width: 15vw;
-
+    width: 15%;
 }
 
 
@@ -117,6 +156,7 @@ footer {
     width: 3.5vw;
     margin-right: 1vw;
     min-width: 30px;
+    filter: drop-shadow(3px 3px 3px black);
 }
 
 
@@ -128,6 +168,7 @@ footer {
         margin-bottom: 1vw;
     }
 }
+
 
 .flex{
     display: flex;
@@ -151,7 +192,24 @@ footer {
 }
 
 
-.day {
+.day:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.5);
     color: #eae4e4;
+}
+
+
+.top{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eae4e4;
+}
+
+
+.day td {
+    padding: 10px;
+}
+
+
+.last{
+    margin: 0;
+    padding: 10px;
 }
