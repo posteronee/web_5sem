@@ -78,11 +78,11 @@ footer {
 
 
 .work-schedule th, .work-schedule td {
-    border: 1px solid #eae4e4;
     padding: 10px;
     text-align: center;
     height: 50px;
     width: 900px;
+    border: none;
 }
 
 
