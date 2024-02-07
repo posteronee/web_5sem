@@ -51,13 +51,17 @@ input {
 button {
     padding: 10px;
     cursor: pointer;
-    background-color: #4caf50; /* Зеленый цвет кнопки */
-    color: white; /* Белый цвет текста кнопки */
+    background-color: #4caf50;
+    color: white;
     border: none;
 }
 
 textarea {
     width: 100%;
     height: auto;
+}
+
+#tableForm button {
+    margin-top: 10px;
 }
 

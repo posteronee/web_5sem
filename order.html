@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="order.css">
     <title>Title</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,7 @@
         <input type="number" id="columns" name="columns" min="1" required>
 
         <button type="submit">Generate Table</button>
+        <button id="resetButton" onclick="resetTable()">Reset Table</button>
     </form>
 
     <div id="tableContainer"></div>
@@ -30,8 +32,6 @@
     <div id="footer">
     </div>
 </footer>
-
-<script src="script.js"></script>
 <script src="order.js"></script>
 </body>
 
