@@ -54,6 +54,7 @@ button {
     background-color: #4caf50;
     color: white;
     border: none;
+    font-family: 'Lora', serif;
 }
 
 textarea {

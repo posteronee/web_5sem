@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <script src="reviews.js" type="text/javascript"></script>
     <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
 <body>
 <button class="back" onclick="goToHomePage()">
@@ -16,21 +19,33 @@
         <form class="add-feedback" onsubmit="addFeedback(event)">
             <label for="feedback" class="add-feedback-label">Оставить отзыв</label>
             <input type="text" id="feedback">
+            <div class="rating-area">
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1" title="Оценка «1»"></label>
+            </div>
             <button type="submit" class="add-feedback-button">Отправить</button>
             <button type="submit" class="add-feedback-button" onclick="clearLocalStorageAndFeedbacks()">Очистить отзывы</button>
         </form>
     </div>
 
+
+
     <div class="feedbacks-list" id="feedbacks-list">
     </div>
 
 </main>
-
 <footer>
     <div id="footer">
     </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

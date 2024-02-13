@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', function () {
     const preloader = document.querySelector('.preloader');
     const nextButton = document.querySelector('.next-button');
     const prevButton = document.querySelector('.prev-button');
+    const errorMessageContainer = document.querySelector('.error-message');
+
 
     let currentImageIndex = 0;
     let imageStack = [];
@@ -46,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     async function updateGallery(index = 0) {
         preloader.style.display = 'block';
+        errorMessageContainer.textContent = '';
 
         try {
             const response = await fetch(`https://api.pexels.com/v1/search?query=cherry&per_page=10&size=medium2&orientation=landscape&page=${Math.random() * 10}&random=${Math.random()}`, {
@@ -99,6 +102,11 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     function showErrorMessage(err) {
-        console.error(err);
+        Toastify({
+            text: "Error!",
+            duration: 2000,
+            gravity: "top",
+            backgroundColor: "black",
+        }).showToast();
     }
 });

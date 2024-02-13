@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фотографии</title>
     <link rel="stylesheet" href="photos.css">
     <script src="photos.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
 <body>
 <button class="back" onclick="goToHomePage()">
@@ -17,6 +20,7 @@
 <main>
     <div class="image-container"></div>
     <div class="preloader"></div>
+    <div class="error-message"></div>
     <div class="image-nav">
         <button class="prev-button back" onclick="showPrevImage()"><img class="back-filter" src="angle-left.png" alt="Главный экран"></button>
         <button class="next-button back" onclick="showNextImage()"><img class="back-filter" src="angle-right.png" alt="Главный экран"></button>
