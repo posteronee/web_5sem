@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фотографии</title>
+    <link rel="stylesheet" href="photos.css">
+    <script src="photos.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<button class="back" onclick="goToHomePage()">
+    <img class="back-filter" src="back-svgrepo-com.svg" alt="Главный экран">
+</button>
+
+<p class="title">Фотографии наших продуктов</p>
+
+<main>
+    <div class="image-container"></div>
+    <div class="preloader"></div>
+    <div class="image-nav">
+        <button class="prev-button back" onclick="showPrevImage()"><img class="back-filter" src="angle-left.png" alt="Главный экран"></button>
+        <button class="next-button back" onclick="showNextImage()"><img class="back-filter" src="angle-right.png" alt="Главный экран"></button>
+    </div>
+</main>
+<footer>
+    <div id="footer">
+    </div>
+</footer>
+</body>
+</html>

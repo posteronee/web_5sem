@@ -121,17 +121,17 @@ footer {
 
 
 @media (max-width: 1040px) {
-    .accordion {
+    .buttons-style {
         width: 35%;
     }
 }
 @media (max-width: 700px) {
-    .accordion {
+    .buttons-style {
         width: 40%;
     }
 }
 @media (max-width: 495px) {
-    .accordion {
+    .buttons-style {
         width: 50%;
     }
 }

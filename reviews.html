@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="reviews.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+<button class="back" onclick="goToHomePage()">
+    <img class="back-filter" src="back-svgrepo-com.svg" alt="Главный экран">
+</button>
+
+<main>
+    <div class="add-feedback-container">
+        <form class="add-feedback" onsubmit="addFeedback(event)">
+            <label for="feedback" class="add-feedback-label">Оставить отзыв</label>
+            <input type="text" id="feedback">
+            <button type="submit" class="add-feedback-button">Отправить</button>
+            <button type="submit" class="add-feedback-button" onclick="clearLocalStorageAndFeedbacks()">Очистить отзывы</button>
+        </form>
+    </div>
+
+    <div class="feedbacks-list" id="feedbacks-list">
+    </div>
+
+</main>
+
+<footer>
+    <div id="footer">
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

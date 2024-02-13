@@ -29,3 +29,7 @@ body {
     font-family: 'Lora', serif;
     color: #eae4e4;
 }
+
+.back:hover {
+    cursor: pointer;
+}
